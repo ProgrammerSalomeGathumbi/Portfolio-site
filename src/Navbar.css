@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 10px;
+    color: #000;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none; 
+    color: black; 
+    transition: color 0.3s; 
+  }
+  
+  a:hover {
+    color: blue; 
+  }

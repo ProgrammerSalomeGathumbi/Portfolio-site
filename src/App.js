@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+// App.js for react-router-dom v6
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+
+import Home from './Home';
+import Contact from './Contact';
+import HeroSection from './HeroSection';
+import ProjectSection from './ProjectSection';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        
+        <main>
+          <Routes>
+          <Route path="/" element={<Header />} />
+            <Route path="/" element={<HeroSection />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<ProjectSection />} />
+            <Route path="/" element={<Footer />} />
+          </Routes>
+        </main>
+    
+      </div>
+    </Router>
   );
 }
 

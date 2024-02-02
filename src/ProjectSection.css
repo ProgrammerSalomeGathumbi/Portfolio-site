@@ -1,0 +1,81 @@
+.project-head {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  width: 90vw;
+  box-sizing: border-box;
+}
+
+.project-head h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  margin-right: 10px; 
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.project {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: calc(30% - 20px);
+  background-color: #f2f2f2;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.project-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-title img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-links a:not(:last-child) {
+  margin-right: 10px;
+}
+
+.project-links a:hover {
+  color: #0066cc;
+}
